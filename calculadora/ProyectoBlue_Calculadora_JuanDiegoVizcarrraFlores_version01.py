@@ -42,35 +42,3 @@ x5=103;y5=33
 z5=x5%y5
 z5
 
-"""#Tarea del video"""
-
-#Proyecto Blue
-#Contraseña valida sera:Mexico3478#
-#Ejercicio 1: Procesa de contraseña basica
-#Eejecicio 2: Realizar un pequeño con menu con if
-pasword = input("Introduce contraseña")
-intentos=3
-for i in range(intentos):
-  if pasword=="Mexico3478#":
-      print("1.- Altas")
-      print("2.- Bajas")
-      print("3.- Cambios")
-      print("4.- cerrar")
-      #Añadir la funcion int ya que el valor intrudocido es un string y hay que convertirlo a valor numerico para que trabaje bien el if
-      menuopt=int(input("Introduce la opción del menu a trabajar: "))
-      if menuopt==1:
-          print("Dame el nombre para dar de alta")
-          nombrealta=input()
-      elif menuopt==2:
-          print("Dame el nombre para dar de baja")
-          nombrebaja=input()
-      elif menuopt==3:
-          nombrecambios=input("Dame el nombre a modificar")
-      elif menuopt==4:
-          print("Cerrar el programa")
-      else:
-          print("La opción no es valida")
-  else:
-    print("La contraseña no es valida")
-print("Número de intetos maximos alcanzados, intente en 5 minutos mas")
-print("el nombre alta es: ",nombrealta,"/el nombre baja es:",nombrebaja,"/el nombre cambiado es:",nombrecambios)
